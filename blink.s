@@ -42,7 +42,7 @@
          .balign 4      
 Intro:   .asciz  "Raspberry Pi wiringPi blink test\n"
 ErrMsg:  .asciz "Setup didn't work... Aborting...\n"
-pin:     .int   7
+pin:     .int   1
 i:       .int   0
 delayMs: .int   250
 OUTPUT   =      1
@@ -120,4 +120,3 @@ forLoop:
         
 done:   
         pop     {ip, pc}        @ pop return address into pc
-
